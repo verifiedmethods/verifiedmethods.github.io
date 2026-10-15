@@ -24,7 +24,5 @@ html_theme_options = {
     "announcement": "Prototype: unit A1 is ready to try.",
     "light_css_variables": {"color-brand-primary": "#1d5c8f", "color-brand-content": "#1d5c8f"},
     "dark_css_variables": {"color-brand-primary": "#8bbbe6", "color-brand-content": "#8bbbe6"},
-    "source_repository": "https://github.com/verifiedmethods/verifiedmethods.github.io/",
-    "source_branch": "main",
-    "source_directory": "docs/",
+    "top_of_page_buttons": [],  # unit pages are copied in at build time, so edit links would break
 }
