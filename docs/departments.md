@@ -19,6 +19,10 @@ students' own laptops.
 | 5 | Stability and stiffness | 6 | Stability limits explained |
 | 6 | Project brief and report | 7, 8 | Short written report with the verification report attached |
 
+Unit A2 (iterative methods for linear systems) has the same nine-section
+structure and can follow as a second six-week block, or replace A1 in a linear
+algebra course.
+
 **Assessment:** the unit's [marking rubric](units/ode-ivp/supervisors/rubric.md)
 can be adapted for coursework; a short viva in week 6 confirms that each
 student understands their own code.

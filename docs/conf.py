@@ -21,7 +21,7 @@ html_show_sourcelink = False
 html_copy_source = False
 html_last_updated_fmt = "%d %B %Y"
 html_theme_options = {
-    "announcement": "Prototype: unit A1 is ready to try.",
+    "announcement": "Prototype: units A1 and A2 are ready to try.",
     "light_css_variables": {"color-brand-primary": "#1d5c8f", "color-brand-content": "#1d5c8f"},
     "dark_css_variables": {"color-brand-primary": "#8bbbe6", "color-brand-content": "#8bbbe6"},
     "top_of_page_buttons": [],  # unit pages are copied in at build time, so edit links would break

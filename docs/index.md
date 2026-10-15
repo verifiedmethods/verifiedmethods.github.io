@@ -83,7 +83,7 @@ Honest about evidence
 | Unit | Topic | Level | Status |
 |---|---|---|---|
 | [A1](units/ode-ivp/index.md) | ODE initial value problems: Euler, Heun, Runge–Kutta | Undergraduate | **Prototype, ready to try** |
-| A2 | Iterative methods for linear systems: Jacobi, Gauss–Seidel, SOR | Undergraduate | In development |
+| [A2](units/linear-systems/index.md) | Iterative methods for linear systems: Jacobi, Gauss–Seidel, SOR | Undergraduate | **Prototype, ready to try** |
 | A5 | Linear multistep and block methods | MSc / PhD | Planned |
 | C1 | Epidemic models: reproduction number, fitting, identifiability | MSc / PhD | Planned |
 
@@ -91,8 +91,8 @@ See the full [curriculum](curriculum.md).
 
 ## Status
 
-verifiedmethods is new. Unit A1 is a prototype, to be trialled with supervisors
-in Nigerian universities from November 2026. Comments, corrections and
+verifiedmethods is new. Units A1 and A2 are prototypes, to be trialled with
+supervisors in Nigerian universities from November 2026. Comments, corrections and
 requests for units are welcome: see [About](about.md).
 
 ```{toctree}
@@ -100,6 +100,7 @@ requests for units are welcome: see [About](about.md).
 
 curriculum
 units/ode-ivp/index
+units/linear-systems/index
 verification-report
 supervisors
 departments

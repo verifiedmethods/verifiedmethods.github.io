@@ -4,7 +4,8 @@ Every unit ends with one command, `python verify.py`. It runs the unit's
 checks on the student's code and writes a single HTML file that opens in any
 browser, offline. A supervisor can read the first page in two minutes.
 
-<a class="vm-button" href="examples/a1-example-report.html">See an example report (unit A1)</a>
+<a class="vm-button" href="examples/a1-example-report.html">Example report: unit A1</a>
+<a class="vm-button" href="examples/a2-example-report.html">Example report: unit A2</a>
 
 ## What is in it
 
@@ -37,7 +38,9 @@ A **gate** must pass. In unit A1 the gates ask:
 
 The gates were tested against deliberately broken implementations (wrong stage
 times, wrong weights, missing step size, a library solver inside the step, and
-others): every one fails at least one gate.
+others): every one fails at least one gate. Unit A2 has four gates of the same
+kind; its central one checks that the error falls, sweep by sweep, by exactly
+the spectral radius of the method's iteration matrix.
 
 A **reported result** has no pass mark. It is the evidence the student
 interprets in the write-up: error tables, comparison with SciPy, behaviour on

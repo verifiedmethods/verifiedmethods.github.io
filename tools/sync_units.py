@@ -20,7 +20,10 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 DOWNLOADS = ROOT / "extra" / "downloads"
 
-UNITS = {"ode-ivp": {"code": "A1", "title": "ODE initial value problems"}}
+UNITS = {
+    "ode-ivp": {"code": "A1", "title": "ODE initial value problems"},
+    "linear-systems": {"code": "A2", "title": "Iterative methods for linear systems"},
+}
 SECTIONS = {"tutorial": "Tutorial", "briefs": "Project briefs", "supervisors": "For supervisors"}
 
 

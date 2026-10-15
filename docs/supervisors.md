@@ -30,7 +30,7 @@ As a check on a project you have already set
 | AI-use statement | A short statement you can adopt or adapt |
 | Marking guides for the briefs | On request: email from your institutional address (see [About](about.md)) |
 
-For unit A1 these are in [the supervisor material](units/ode-ivp/supervisors/index.md).
+They are in each unit's supervisor material: [A1](units/ode-ivp/supervisors/index.md), [A2](units/linear-systems/supervisors/index.md).
 
 ## What we ask in return
 
