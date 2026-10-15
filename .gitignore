@@ -1,0 +1,8 @@
+docs/_build/
+docs/units/*/tutorial/
+docs/units/*/briefs/
+docs/units/*/supervisors/
+docs/units/*/_download.md
+extra/downloads/
+__pycache__/
+.venv/

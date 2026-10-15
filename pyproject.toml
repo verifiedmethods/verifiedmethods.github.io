@@ -1,0 +1,11 @@
+# Builds the verifiedmethods website (https://verifiedmethods.github.io).
+#   uv run python tools/sync_units.py      # copy unit material and downloads
+#   uv run sphinx-build -W -b html docs docs/_build/html
+[project]
+name = "verifiedmethods-site"
+version = "0"
+requires-python = ">=3.11"
+dependencies = ["sphinx>=8.2", "myst-parser>=4.0", "furo>=2025.7"]
+
+[tool.uv]
+package = false

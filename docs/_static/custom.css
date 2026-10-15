@@ -1,0 +1,13 @@
+.lead { font-size: 1.2rem; line-height: 1.5; color: var(--color-foreground-secondary); margin-top: -0.4rem; }
+.vm-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1rem; margin: 1rem 0 1.5rem; }
+div.vm-card.docutils.container { border: 1px solid var(--color-background-border); border-radius: 0.6rem; padding: 0.9rem 1rem 0.4rem;
+           background: var(--color-background-secondary); }
+@media (max-width: 40em) { article h1 { font-size: 2rem; } }
+.vm-card p:first-child { margin-top: 0; }
+a.vm-button { display: inline-block; padding: 0.55rem 1.1rem; border-radius: 0.5rem; font-weight: 600;
+              background: var(--color-brand-primary); color: var(--color-background-primary) !important;
+              text-decoration: none; margin: 0.4rem 0 0.8rem; }
+a.vm-button:hover { filter: brightness(1.1); }
+.vm-meta { color: var(--color-foreground-secondary); margin-top: -0.4rem; }
+.vm-fingerprint { font-family: var(--font-stack--monospace); font-size: 0.8rem; overflow-wrap: anywhere; }
+table.docutils td, table.docutils th { vertical-align: top; }
