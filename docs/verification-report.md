@@ -10,8 +10,8 @@ browser, offline. A supervisor can read the first page in two minutes.
 
 The first page
 : The student's details, the date, a fingerprint of the student's code, a
-  fingerprint of the checks, and a summary: for each method, how many gates
-  passed and the observed order of convergence.
+  fingerprint of the checks, the modules the code imports, and a summary: for
+  each method, how many gates passed and the observed order of convergence.
 
 The comparison plots
 : Error against step size, with the theoretical slopes, and error against the
@@ -46,15 +46,16 @@ a stiff problem.
 ## What a report shows, and what it does not
 
 A report shows that the code with the stated fingerprint passed the stated
-checks. It does **not** show who wrote the code, and a report produced on a
-student's own computer could in principle have been edited. So:
+checks: strong evidence that it implements the method correctly. It does
+**not** show who wrote the code, and a report produced on a student's own
+computer could in principle have been edited. So:
 
-1. **To confirm a report,** copy the student's `student` folder into a fresh
-   copy of the unit and run `python verify.py` yourself. The check-suite
-   fingerprint should match the one published on the unit's page.
+1. **To confirm a report,** first look through the student's `steps.py`: it
+   should be short and import only NumPy (the report lists its imports and
+   warns about anything else, because code in that file runs alongside the
+   checks). Then copy the student's `student` folder into a fresh copy of the
+   unit and run `python verify.py` yourself. The check-suite fingerprint should
+   match the one published on the unit's page.
 2. **To confirm understanding,** ask a few of the viva questions in the unit's
    supervisor material, for example: "Show me where your code evaluates $k_2$,
    and why at $t + h/2$."
-
-Students who keep their work on GitHub can also run the checks automatically
-on every change; the run is recorded in the repository.

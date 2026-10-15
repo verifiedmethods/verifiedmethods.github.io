@@ -25,10 +25,10 @@ As a check on a project you have already set
 | | |
 |---|---|
 | How to confirm a report | Two minutes, in your own copy of the unit |
-| Viva questions | About ten per unit, on the code and on the results |
+| Viva questions | Twelve for unit A1, on the code, the results and the project |
 | Marking rubric | For the computational chapter, with suggested weights |
 | AI-use statement | A short statement you can adopt or adapt |
-| Marking guides for the briefs | Available on request to supervisors |
+| Marking guides for the briefs | On request: email from your institutional address (see [About](about.md)) |
 
 For unit A1 these are in [the supervisor material](units/ode-ivp/supervisors/index.md).
 

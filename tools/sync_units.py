@@ -38,10 +38,13 @@ def copy_section(src: Path, dst: Path, title: str):
     if dst.exists():
         shutil.rmtree(dst)
     dst.mkdir(parents=True)
-    pages = sorted(p for p in src.glob("*.md") if p.name != "README.md")
+    readme = (src / "README.md").read_text(encoding="utf-8") if (src / "README.md").exists() else f"# {title}\n"
+    files = sorted(p for p in src.glob("*.md") if p.name != "README.md")
+    listed = [n for n in dict.fromkeys(re.findall(r"\]\(([^)/]+\.md)\)", readme)) if (src / n).exists()]
+    pages = [src / n for n in listed] + [p for p in files if p.name not in listed]  # README order first
     for p in pages:
         shutil.copy2(p, dst / p.name)
-    index = (src / "README.md").read_text(encoding="utf-8") if (src / "README.md").exists() else f"# {title}\n"
+    index = readme
     index = re.sub(r"\A# .*", f"# {title}", index, count=1)  # short title: the page sits under its unit in the menu
     toc = "\n".join(p.stem for p in pages)
     index += f"\n```{{toctree}}\n:hidden:\n\n{toc}\n```\n"

@@ -2,6 +2,8 @@
 
 <p class="vm-meta">Level: final-year undergraduate (also an MSc refresher) · Language: Python · Status: prototype</p>
 
+<p class="vm-meta">Students should know: calculus including Taylor series, a first course in ordinary differential equations, and basic Python with NumPy arrays.</p>
+
 Students write three one-step methods for $y' = f(t, y)$: Euler's method,
 Heun's method and the classical fourth-order Runge–Kutta method. Then they show
 with evidence that their code works: the observed convergence order, the error
@@ -17,6 +19,10 @@ verification study.
 The **check-suite fingerprint** lets a supervisor confirm that a student's
 report was produced by the official checks for this version (see
 [the verification report](../../verification-report.md)).
+
+To confirm that the download is complete and unchanged, compare its SHA-256
+with the value above: on Windows run `certutil -hashfile <file> SHA256`, on
+macOS `shasum -a 256 <file>`, on Linux `sha256sum <file>`.
 
 ## Quick start
 
@@ -61,7 +67,7 @@ After this unit a student can:
 
 | | |
 |---|---|
-| [Tutorial](tutorial/index.md) | Nine short sections, from setting up Python to reading the report |
+| [Tutorial](tutorial/index.md) | Nine short sections, from setting up Python to choosing a project brief |
 | [Project briefs](briefs/index.md) | Comparing methods properly; Nigeria's population with the logistic model; stiffness |
 | [For supervisors](supervisors/index.md) | Confirming a report, viva questions, a marking rubric, an AI-use statement |
 | `verify.py` | Four gates and five reported results, written to an HTML report |

@@ -29,12 +29,13 @@ runs offline. A laptop with 4 GB of memory is enough.
 
 ## Research methods and digital skills
 
-The National Universities Commission's proposed ICT–STEM Transformation
-Strategy for Higher Education (2026–2036) includes a research methods and
-digital skills programme for doctoral training, and emphasises scientific
-computing and research integrity, including reproducibility. Units like these
-are one practical way to teach those skills now, at undergraduate and master's
-level.
+The *ICT–STEM Transformation Strategy for Higher Education 2026–2036*, a policy
+proposal submitted to the National Universities Commission in July 2026,
+includes a research methods and digital skills programme for doctoral training,
+and emphasises scientific computing and research integrity, including
+reproducibility. Units like these are one practical way to teach those skills
+now, at undergraduate and master's level. (verifiedmethods is independent: it
+is not affiliated with or endorsed by the NUC.)
 
 If your department would like to use the units in a course, or to discuss a
 unit for a method your students use often, please get in touch (see

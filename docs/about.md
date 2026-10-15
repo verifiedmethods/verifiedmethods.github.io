@@ -22,6 +22,11 @@ Email [abdgafartunde@yahoo.com](mailto:abdgafartunde@yahoo.com). Supervisors
 requesting marking guides: please write from your institutional email address
 and say which unit and course you supervise.
 
+## Independence
+
+verifiedmethods is independent and non-commercial. It is not affiliated with or
+endorsed by the National Universities Commission or any government agency.
+
 ## Contributing
 
 The units are open source. Corrections and suggestions can be sent through the

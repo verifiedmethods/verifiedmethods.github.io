@@ -1,0 +1,11 @@
+The text of this website (docs/) is licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+The build scripts and configuration (tools/, docs/conf.py, .github/) are
+licensed under the BSD 3-Clause License, as in the unit repositories.
+
+Copyright (c) 2026, Abd'gafar Tunde Tiamiyu and the verifiedmethods contributors.
+
+Unit material copied into the site at build time keeps its own licence (see
+each unit's LICENSE and LICENSE-docs).
