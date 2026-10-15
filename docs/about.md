@@ -18,8 +18,9 @@ trial units are very welcome to join.
 
 ## Contact
 
-<!-- TODO before launch: contact method (email or form) to be confirmed. -->
-Contact details will be added before the site is launched.
+Email [abdgafartunde@yahoo.com](mailto:abdgafartunde@yahoo.com). Supervisors
+requesting marking guides: please write from your institutional email address
+and say which unit and course you supervise.
 
 ## Contributing
 
