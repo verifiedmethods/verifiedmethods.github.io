@@ -8,14 +8,16 @@ University of Lagos and the University of Ilorin found block, multistep, hybrid
 and collocation methods for ODEs, and epidemic models, to be the two largest
 computational topics.
 
-| Level | Numerical methods | Data and statistical modelling | Applied models and inverse problems |
-|---|---|---|---|
-| **Foundations** | Errors, floating point and convergence order (inside A1 for now) | | |
-| **Undergraduate** | **A1** ODE initial value problems (*prototype*) · **A2** iterative methods for linear systems (*prototype*) · A3 interpolation and quadrature · A4 finite differences | B1 least squares and curve fitting | |
-| **MSc / PhD** | A5 linear multistep and block methods · A6 semi-analytical methods (Adomian decomposition, homotopy perturbation, variational iteration, differential transform) checked against numerical references · A7 integro-differential equations | B2 time series · B3 response surface methodology and neural networks with proper validation | C1 epidemic models · C2 vertical electrical sounding (VES) inversion · C3 aeromagnetic interpretation |
+| Level | Numerical methods and scientific computing | Mathematical models and inverse problems |
+|---|---|---|
+| **Foundations** | Errors, floating point and convergence order (inside A1 for now) | |
+| **Undergraduate** | **A1** ODE initial value problems (*prototype*) · **A2** iterative methods for linear systems (*prototype*) · A3 interpolation and quadrature · A4 finite differences | |
+| **MSc / PhD** | A5 linear multistep and block methods · A6 semi-analytical methods (Adomian decomposition, homotopy perturbation, variational iteration, differential transform) checked against numerical references · A7 integro-differential equations | C1 epidemic models · C2 vertical electrical sounding (VES) inversion · C3 aeromagnetic interpretation |
 
 Units in plain text are planned. The order may change in response to what
-supervisors tell us they need.
+supervisors tell us they need. The current focus is numerical methods,
+scientific computing and mathematical models; units on statistical modelling
+(regression, response surface methodology, machine learning) may follow later.
 
 ## Every unit has the same parts
 
