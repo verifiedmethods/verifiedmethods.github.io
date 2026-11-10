@@ -1,20 +1,29 @@
 ---
 myst:
   html_meta:
-    description: "Open, verification-first course units for the computational methods used in Nigerian STEM projects and theses."
+    description: "Free numerical methods practicals: implement, test and explain computations, with teaching and assessment material for lecturers."
 ---
 
 # verifiedmethods
 
-<p class="lead">Open, verification-first course units for the computational methods used in Nigerian STEM projects and theses.</p>
+<p class="lead">Turn numerical methods taught in class into computations students can test, explain and reproduce.</p>
 
-Each unit teaches one family of methods and, just as important, how to show
-that a computation is right. Students write the key step themselves, carry out
-a convergence, cost and stability study, and finish with a
-[verification report](verification-report.md) that a supervisor can check in
-two minutes.
+verifiedmethods provides free, adaptable practical units for numerical methods
+teaching and preparation for computational projects in Nigerian STEM programmes.
+Students implement the core methods, examine their numerical behaviour and
+interpret the evidence in a [verification report](verification-report.md).
+Lecturers get tutorials, assignment briefs, marking rubrics and viva questions.
 
-[Try unit A1: ODE initial value problems](units/ode-ivp/index.md){.vm-button}
+[Getting started](getting-started.md){.vm-button}
+[For lecturers and supervisors](supervisors.md){.vm-button}
+
+## Where it fits in teaching
+
+Use a unit **alongside or shortly after the relevant topic is introduced**.
+For example, teach Euler's method, then let students implement it and measure
+how the error changes with the step size. Repeat with Heun and Runge–Kutta.
+There is no need to wait until the whole course ends. Project students can
+also use a unit as a refresher before developing their own investigation.
 
 ## Who it is for
 
@@ -23,19 +32,21 @@ two minutes.
 :::{container} vm-card
 **Students**
 
-Final-year undergraduates and MSc students. Learn a method properly, check
-your own code, and hand in evidence that examiners can trust.
+Undergraduates who have met the relevant mathematics and basic Python;
+also MSc students revising the foundations. Implement methods, interpret
+results and prepare evidence for assessment.
 
 [Start with the A1 tutorial](units/ode-ivp/tutorial/index.md)
 :::
 
 :::{container} vm-card
-**Supervisors**
+**Lecturers and supervisors**
 
-Give a unit to your project students. Check their computations from a short
-report; viva questions and a marking rubric are included.
+Assign a practical after teaching a topic, or use a unit with project students.
+Rerun their work and assess their explanations with the included rubric and
+viva questions.
 
-[For supervisors](supervisors.md)
+[Plan a first trial](supervisors.md)
 :::
 
 :::{container} vm-card
@@ -51,12 +62,14 @@ practical. A six-week outline is ready to adapt.
 
 ## How it works
 
-1. **Download** a unit: one small zip file that runs offline.
-2. **Follow the tutorial** and write the core step of each method.
-3. **Run `python verify.py`.** Four checks must pass, and the evidence is
-   collected in a report.
-4. **Write up** a project brief using the report. The supervisor confirms the
-   report and asks a few viva questions.
+1. **Choose and download** A1 or A2, then install Python and the required
+   packages once. GitHub is optional.
+2. **Follow the tutorial** and write the core step of each method. The first
+   report normally says the methods are not implemented yet.
+3. **Run `python verify.py`** as you work. Before submitting, run
+   `python verify.py --strict`; every method must pass all four gates.
+4. **Explain the results** in the agreed assignment or project brief. The
+   lecturer reruns the checks and uses a short viva to assess understanding.
 
 ## Principles
 
@@ -65,14 +78,17 @@ Free and open
   it for your own courses.
 
 Works where students are
-: Plain Python, offline, a few seconds on a laptop with 4 GB of memory.
+: The provided checks and reports run locally after Python and the packages
+  are installed. See [getting started](getting-started.md) for offline study
+  and setup requirements.
 
 Students do the thinking
 : The unit supplies test problems, plots and checks. The student writes the
   method and interprets the evidence.
 
 Verification before application
-: Convergence order, cost and stability come before any application.
+: Check the implementation and its numerical behaviour before interpreting
+  an application.
 
 Honest about evidence
 : A report shows that code passes stated checks. It does not show who wrote the
@@ -84,20 +100,20 @@ Honest about evidence
 |---|---|---|---|
 | [A1](units/ode-ivp/index.md) | ODE initial value problems: Euler, Heun, Runge–Kutta | Undergraduate | **Prototype, ready to try** |
 | [A2](units/linear-systems/index.md) | Iterative methods for linear systems: Jacobi, Gauss–Seidel, SOR | Undergraduate | **Prototype, ready to try** |
-| A5 | Linear multistep and block methods | MSc / PhD | Planned |
-| C1 | Epidemic models: reproduction number, fitting, identifiability | MSc / PhD | Planned |
 
-See the full [curriculum](curriculum.md).
+Only A1 and A2 are available now. See the [curriculum](curriculum.md) for
+possible future units; priorities will depend on lecturer and student feedback.
 
 ## Status
 
-verifiedmethods is new. Units A1 and A2 are prototypes, to be trialled with
-supervisors in Nigerian universities from November 2026. Comments, corrections and
-requests for units are welcome: see [About](about.md).
+Units A1 and A2 are **trial prototypes**. They have automated checks, but have
+not yet been trialled externally with lecturers and students. We welcome small
+course trials, corrections and feedback: see [About](about.md).
 
 ```{toctree}
 :hidden:
 
+getting-started
 curriculum
 units/ode-ivp/index
 units/linear-systems/index

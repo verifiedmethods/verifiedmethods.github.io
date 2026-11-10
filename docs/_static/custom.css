@@ -8,6 +8,7 @@ a.vm-button { display: inline-block; padding: 0.55rem 1.1rem; border-radius: 0.5
               background: var(--color-brand-primary); color: var(--color-background-primary) !important;
               text-decoration: none; margin: 0.4rem 0 0.8rem; }
 a.vm-button:hover { filter: brightness(1.1); }
+a.vm-button:focus-visible { outline: 3px solid var(--color-brand-primary); outline-offset: 3px; }
 .vm-meta { color: var(--color-foreground-secondary); margin-top: -0.4rem; }
 .vm-fingerprint { font-family: var(--font-stack--monospace); font-size: 0.8rem; overflow-wrap: anywhere; }
 table.docutils td, table.docutils th { vertical-align: top; }

@@ -2,7 +2,8 @@
 
 Every unit ends with one command, `python verify.py`. It runs the unit's
 checks on the student's code and writes a single HTML file that opens in any
-browser, offline. A supervisor can read the first page in two minutes.
+browser, offline. It supports assessment alongside a student's explanation
+and a lecturer's rerun; it is not a certificate of research validity.
 
 <a class="vm-button" href="examples/a1-example-report.html">Example report: unit A1</a>
 <a class="vm-button" href="examples/a2-example-report.html">Example report: unit A2</a>
@@ -12,11 +13,12 @@ browser, offline. A supervisor can read the first page in two minutes.
 The first page
 : The student's details, the date, a fingerprint of the student's code, a
   fingerprint of the checks, the modules the code imports, and a summary: for
-  each method, how many gates passed and the observed order of convergence.
+  each method, how many gates passed and its observed order (A1) or convergence
+  factor on the specified test problem (A2).
 
 The comparison plots
-: Error against step size, with the theoretical slopes, and error against the
-  amount of work.
+: A1 shows error against step size and work. A2 shows sweeps against the SOR
+  relaxation factor and residual histories. Both include detailed tables.
 
 The statement
 : What the report shows and what it does not (below), and the student's
@@ -50,13 +52,15 @@ progress mode is not evidence that all methods are complete. GitHub Actions
 uses strict checking automatically.
 
 A **reported result** has no pass mark. It is the evidence the student
-interprets in the write-up: error tables, comparison with SciPy, behaviour on
-a stiff problem.
+interprets in the write-up. In A1 these include error tables, comparison with
+SciPy and behaviour on a stiff problem; in A2 they include sweep counts,
+relaxation-factor choice, failure cases and residual versus error.
 
 ## What a report shows, and what it does not
 
 A report shows that the code with the stated fingerprint passed the stated
-checks: strong evidence that it implements the method correctly. It does
+checks. Passing gives evidence about those tested cases; it is not a proof
+for every input or a validation of a new model or application. It does
 **not** show who wrote the code, and a report produced on a student's own
 computer could in principle have been edited. So:
 
@@ -69,3 +73,17 @@ computer could in principle have been edited. So:
 2. **To confirm understanding,** ask a few of the viva questions in the unit's
    supervisor material, for example: "Show me where your code evaluates $k_2$,
    and why at $t + h/2$."
+
+## Prototype versions and fingerprints
+
+A fingerprint is an identifier, not a signature or proof that a report is
+authentic. Confirm the code and checks by rerunning them. The current units
+are development prototypes (`0.1.0.dev0`), so the download can change as fixes
+are made even when its version label stays the same. Keep the original unit
+zip, its download SHA-256 and the report with the submission. If the current
+site's fingerprint differs from an older report, establish which checker was
+used before comparing the results.
+
+GitHub automation is optional. For these development versions it uses the
+checks in the student's repository; it does not fetch an immutable official
+release. Use a lecturer's fresh-copy rerun when confirming a trial submission.

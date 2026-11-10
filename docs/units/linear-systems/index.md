@@ -1,6 +1,6 @@
 # A2: Iterative methods for linear systems
 
-<p class="vm-meta">Level: final-year undergraduate (also an MSc refresher) · Language: Python · Status: prototype</p>
+<p class="vm-meta">Level: undergraduate (also an MSc refresher) · Language: Python · Status: trial prototype</p>
 
 <p class="vm-meta">Students should know: matrices, vectors and eigenvalues, and basic Python with NumPy arrays.</p>
 
@@ -19,9 +19,15 @@ and Gauss–Seidel" into a proper verification study.
 ```{include} _download.md
 ```
 
-The **check-suite fingerprint** lets a supervisor confirm that a student's
-report was produced by the official checks for this version (see
-[the verification report](../../verification-report.md)).
+Use this unit alongside or shortly after teaching the methods, or as a project
+refresher. A full brief is optional for a shorter course practical; agree the
+scope with your lecturer. See [getting started](../../getting-started.md).
+
+The **check-suite fingerprint** identifies the checker. A supervisor confirms
+the results by rerunning the student's code; the fingerprint alone does not
+authenticate a report. These development downloads can change without a version
+label change, so keep the original zip and its SHA-256 with the submission.
+See [the verification report](../../verification-report.md).
 
 To confirm that the download is complete and unchanged, compare its SHA-256
 with the value above: on Windows run `certutil -hashfile <file> SHA256`, on
@@ -49,7 +55,9 @@ python -m pip install -r requirements.txt
 ```
 
 Then run `python verify.py` and open `report/verification-report.html` in a
-browser. [Tutorial section 0](tutorial/00-setup.md) explains each step, with
+browser. The starter methods are deliberately unfinished: **not implemented
+yet** is the expected first result. Before a full submission, run
+`python verify.py --strict`. [Tutorial section 0](tutorial/00-setup.md) explains each step, with
 help for common problems.
 
 ## What students learn

@@ -1,12 +1,14 @@
 # Curriculum
 
-The units start with the basic methods used in final-year undergraduate
-projects and build up to the methods common in MSc and PhD research. The order
-is guided by research activity in Nigerian mathematics departments: our survey
-of mathematics papers indexed in OpenAlex since 2019 from FUT Minna, the
-University of Lagos and the University of Ilorin found block, multistep, hybrid
-and collocation methods for ODEs, and epidemic models, to be the two largest
-computational topics.
+The current units support undergraduate numerical methods teaching and
+preparation for computational projects. **A1 and A2 are available as trial
+prototypes**; all other entries below are possible future topics, not materials
+ready to assign. The longer-term aim is to support computational methods and
+mathematical models used in MSc and PhD work as well.
+
+Choose a unit by its prerequisites and your course outcomes rather than the
+year label alone. A1 and A2 are independent; students need not complete A1
+before A2. See [getting started](getting-started.md).
 
 | Level | Numerical methods and scientific computing | Mathematical models and inverse problems |
 |---|---|---|

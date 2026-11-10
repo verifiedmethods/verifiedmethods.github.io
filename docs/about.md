@@ -1,11 +1,15 @@
 # About
 
 verifiedmethods is an open project to strengthen the computational part of
-STEM projects and theses in Nigeria. Many projects apply standard methods (ODE
-solvers, iterative methods, block methods, epidemic models) without showing that
-the computations are correct. Each unit teaches a method together with the
-checks that show it works, so that students produce evidence their supervisors
-and examiners can trust.
+STEM teaching, projects and theses in Nigeria. Each unit connects a numerical
+method with implementation, checks and interpretation, so that students can
+provide evidence for their computations and explain their limitations.
+Lecturers can use the units as practical assignments alongside taught topics,
+and supervisors can adapt them for project preparation.
+
+A1 and A2 are prototypes. They have automated maintainer tests but have not yet
+been trialled externally with lecturers and students. Claims about learning
+benefits, installation effort and assessment workload remain to be evaluated.
 
 ## Who is behind it
 
@@ -20,7 +24,14 @@ trial units are very welcome to join.
 
 Email [abdgafartunde@yahoo.com](mailto:abdgafartunde@yahoo.com). Supervisors
 requesting marking guides: please write from your institutional email address
-and say which unit and course you supervise.
+and say which unit and course you supervise. To discuss a first trial, tell us
+which topic you teach, students' mathematics and programming background, and
+the software and computers they use.
+
+Reports are generated locally; there is no submission upload service on this
+site. Student information entered in the unit appears in the report. Share it
+only through your course's agreed submission route; omit names and matriculation
+numbers when sending a public bug report or screenshot.
 
 ## Independence
 
