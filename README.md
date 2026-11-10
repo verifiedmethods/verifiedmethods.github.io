@@ -15,14 +15,20 @@ The unit repositories must be sibling folders (for example `../ode-ivp`).
 `extra/downloads/`, and writes the download box with the published check-suite
 fingerprint. These generated files are not committed.
 
-`extra/examples/a1-example-report.html` is an example verification report,
-produced from the maintainers' private reference code with example details.
-Regenerate it when the check suite changes.
+`extra/examples/a1-example-report.html` and `a2-example-report.html` are
+verification reports produced from the maintainers' private reference code
+with example details. Regenerate both when the check suite changes, using
+`build_example_reports.py` in the private solutions repository. Only the
+generated HTML belongs in this repository.
 
 ## Publishing
 
 `.github/workflows/pages.yml` builds the site on every push to `main` (it
-checks out `verifiedmethods/ode-ivp` alongside) and deploys it to GitHub Pages.
+checks out pinned revisions of `verifiedmethods/ode-ivp` and
+`verifiedmethods/linear-systems` alongside) and deploys it to GitHub Pages.
+When publishing unit changes, update both `ref` values in that workflow to the
+reviewed unit commits so the downloads, documentation, and example reports
+describe the same check suites. Local builds use the sibling working trees.
 In the repository settings, Pages must use "GitHub Actions" as its source.
 
 Pages are written in MyST Markdown, with Furo as the theme (chosen for small

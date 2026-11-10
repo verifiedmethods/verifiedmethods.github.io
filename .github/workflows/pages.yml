@@ -1,4 +1,4 @@
-# Builds the site with the latest unit material and publishes it to GitHub Pages.
+# Builds the site with reviewed unit revisions and publishes it to GitHub Pages.
 name: pages
 on:
   push:
@@ -19,10 +19,12 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: verifiedmethods/ode-ivp
+          ref: 7f45349cb5dd39cfa4a739dbf4353b5f16a30e39
           path: units-src/ode-ivp
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: verifiedmethods/linear-systems
+          ref: e9d238657e606ac423bdc97922c1eb185f6d0357
           path: units-src/linear-systems
       - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
       - name: Copy unit material and downloads

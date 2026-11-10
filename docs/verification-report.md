@@ -39,8 +39,15 @@ A **gate** must pass. In unit A1 the gates ask:
 The gates were tested against deliberately broken implementations (wrong stage
 times, wrong weights, missing step size, a library solver inside the step, and
 others): every one fails at least one gate. Unit A2 has four gates of the same
-kind; its central one checks that the error falls, sweep by sweep, by exactly
-the spectral radius of the method's iteration matrix.
+kind; its central one compares an average convergence factor between sweeps
+100 and 200 on a specified Poisson problem with the spectral radius of the
+method's iteration matrix, allowing a relative difference of 0.1%. The
+spectral radius does not prescribe every stepwise error ratio in general.
+
+For a completed submission, `python verify.py --strict` requires every method
+to pass. Ordinary local runs allow unfinished work; a zero exit code in that
+progress mode is not evidence that all methods are complete. GitHub Actions
+uses strict checking automatically.
 
 A **reported result** has no pass mark. It is the evidence the student
 interprets in the write-up: error tables, comparison with SciPy, behaviour on
@@ -57,7 +64,7 @@ computer could in principle have been edited. So:
    should be short and import only NumPy (the report lists its imports and
    warns about anything else, because code in that file runs alongside the
    checks). Then copy the student's `student` folder into a fresh copy of the
-   unit and run `python verify.py` yourself. The check-suite fingerprint should
+   unit and run `python verify.py --strict` yourself. The check-suite fingerprint should
    match the one published on the unit's page.
 2. **To confirm understanding,** ask a few of the viva questions in the unit's
    supervisor material, for example: "Show me where your code evaluates $k_2$,

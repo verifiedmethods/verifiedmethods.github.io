@@ -6,8 +6,9 @@
 
 Students write one sweep of three classical methods for $Ax = b$: Jacobi's
 method, the Gauss–Seidel method and successive over-relaxation (SOR). Then they
-show with evidence that their code works: the error must fall, sweep by sweep,
-by exactly the spectral radius of the method's iteration matrix. They also
+show with evidence that their code works: on a specified Poisson test problem,
+an observed average convergence factor is compared with the spectral radius
+of the method's iteration matrix. They also
 study how the number of sweeps grows with the size of the system, how to choose
 the relaxation factor, when the methods fail, and why a small residual does not
 guarantee a small error. This turns the familiar "comparative study of Jacobi
@@ -57,8 +58,9 @@ After this unit a student can:
 
 - derive Jacobi's method from the equations, and implement Jacobi, Gauss–Seidel
   and SOR sweeps that work for any size of system;
-- explain the iteration matrix and why the error falls by its spectral radius
-  per sweep, and measure that factor;
+- explain the iteration matrix, the convergence condition, and when its
+  spectral radius describes the eventual error decay; measure an average
+  convergence factor and recognize transient effects;
 - predict how the number of sweeps grows with the size of the system, and
   choose the relaxation factor for SOR;
 - recognise when the methods fail, and why the classical sufficient conditions
