@@ -7,7 +7,7 @@ provide evidence for their computations and explain their limitations.
 Lecturers can use the units as practical assignments alongside taught topics,
 and supervisors can adapt them for project preparation.
 
-A1 and A2 are prototypes. They have automated maintainer tests but have not yet
+A1 and A2 are pilot prereleases. They have automated maintainer tests but have not yet
 been trialled externally with lecturers and students. Claims about learning
 benefits, installation effort and assessment workload remain to be evaluated.
 

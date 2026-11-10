@@ -80,7 +80,8 @@ teaching arrangement, not a measured completion time.
 
 ## For lecturers
 
-See [lecturers and supervisors](supervisors.md) for a first-trial checklist,
-assessment options and feedback questions. Questions or setup difficulties can
-be sent through [About and contact](about.md). Please describe the unit,
+Use the [pilot checklist and printable copy](pilot-checklist.md) to plan a
+small trial. The [lecturer guide](supervisors.md) includes assessment options
+and feedback questions. Send questions or setup difficulties through
+[About and contact](about.md). Please describe the unit,
 operating system, Python version and exact error; omit student identifiers.

@@ -33,3 +33,14 @@ In the repository settings, Pages must use "GitHub Actions" as its source.
 
 Pages are written in MyST Markdown, with Furo as the theme (chosen for small
 pages on slow connections).
+
+## Pilot checklist
+
+`tools/pilot_checklist.json` is the shared source for the web checklist and
+its printable PDF. After editing it, regenerate and inspect both outputs:
+
+    uv run --with reportlab python tools/build_pilot_checklist.py
+
+Commit `docs/pilot-checklist.md` and `extra/handouts/lecturer-pilot-checklist.pdf`
+alongside the source and generator. The PDF is a static printable checklist,
+not an upload form. Completed feedback is returned by email.

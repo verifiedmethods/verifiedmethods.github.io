@@ -106,9 +106,11 @@ possible future units; priorities will depend on lecturer and student feedback.
 
 ## Status
 
-Units A1 and A2 are **trial prototypes**. They have automated checks, but have
+Units A1 and A2 are **pilot prereleases, version 0.1.0a1**. They have automated checks, but have
 not yet been trialled externally with lecturers and students. We welcome small
 course trials, corrections and feedback: see [About](about.md).
+
+[Prepare a small trial: lecturer checklist](pilot-checklist.md)
 
 ```{toctree}
 :hidden:
@@ -119,6 +121,7 @@ units/ode-ivp/index
 units/linear-systems/index
 verification-report
 supervisors
+pilot-checklist
 departments
 about
 ```

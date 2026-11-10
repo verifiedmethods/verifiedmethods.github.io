@@ -1,6 +1,6 @@
 # A1: ODE initial value problems
 
-<p class="vm-meta">Level: undergraduate (also an MSc refresher) · Language: Python · Status: trial prototype</p>
+<p class="vm-meta">Level: undergraduate (also an MSc refresher) · Language: Python · Status: pilot prerelease</p>
 
 <p class="vm-meta">Students should know: calculus including Taylor series, a first course in ordinary differential equations, and basic Python with NumPy arrays.</p>
 
@@ -22,8 +22,8 @@ scope with your lecturer. See [getting started](../../getting-started.md).
 
 The **check-suite fingerprint** identifies the checker. A supervisor confirms
 the results by rerunning the student's code; the fingerprint alone does not
-authenticate a report. These development downloads can change without a version
-label change, so keep the original zip and its SHA-256 with the submission.
+authenticate a report. Use the tagged pilot download and keep its original zip and SHA-256 with the
+submission. Corrections will use a new version.
 See [the verification report](../../verification-report.md).
 
 To confirm that the download is complete and unchanged, compare its SHA-256
@@ -83,9 +83,9 @@ After this unit a student can:
 ## Licence and citation
 
 Code: BSD 3-Clause. Tutorial, briefs and supervisor material: CC BY 4.0.
-Population data in brief 2: World Bank, CC BY 4.0. A DOI will be added at the
-first release; until then, cite as: Tiamiyu, A. T. (2026), *verifiedmethods
-unit A1: ODE initial value problems*, version 0.1.0.dev0,
+Population data in brief 2: World Bank, CC BY 4.0. A DOI is planned for a
+stable release; for this pilot, cite as: Tiamiyu, A. T. (2026), *verifiedmethods
+unit A1: ODE initial value problems*, version 0.1.0a1,
 https://verifiedmethods.github.io.
 
 ```{toctree}

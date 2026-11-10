@@ -68,6 +68,8 @@ def main() -> int:
         dist = src / "dist"
         zip_name = f"verifiedmethods-{slug}-{version}.zip"
         shutil.copy2(dist / zip_name, DOWNLOADS / zip_name)
+        manifest_name = f"verifiedmethods-{slug}-{version}-manifest.json"
+        shutil.copy2(dist / "manifest.json", DOWNLOADS / manifest_name)
         sums = dict(line.split()[::-1] for line in (dist / "SHA256SUMS").read_text().splitlines() if line.strip())
         fingerprint = (dist / "check-suite-fingerprint.txt").read_text().split()[1]
 
@@ -86,6 +88,11 @@ def main() -> int:
             f"| Check-suite fingerprint | <span class=\"vm-fingerprint\">{fingerprint}</span> |\n",
             encoding="utf-8",
         )
+        with (unit_dir / "_download.md").open("a", encoding="utf-8") as download:
+            download.write(
+                f"\n[Release notes and original assets](https://github.com/verifiedmethods/{slug}/releases/tag/v{version})"
+                f' · <a href="../../downloads/{manifest_name}">Download manifest</a>\n'
+            )
         print(f"{slug}: version {version}, {zip_name} ({size}), fingerprint {fingerprint[:16]}...")
     return 0
 

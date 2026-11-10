@@ -74,16 +74,21 @@ computer could in principle have been edited. So:
    supervisor material, for example: "Show me where your code evaluates $k_2$,
    and why at $t + h/2$."
 
-## Prototype versions and fingerprints
+## Pilot versions and fingerprints
 
 A fingerprint is an identifier, not a signature or proof that a report is
-authentic. Confirm the code and checks by rerunning them. The current units
-are development prototypes (`0.1.0.dev0`), so the download can change as fixes
-are made even when its version label stays the same. Keep the original unit
-zip, its download SHA-256 and the report with the submission. If the current
-site's fingerprint differs from an older report, establish which checker was
-used before comparing the results.
+authentic. Confirm the code and checks by rerunning them. A1 and A2 now have
+versioned pilot prereleases (`0.1.0a1`), with a tagged download, SHA-256
+checksums and a manifest. We will publish corrections under a new version
+rather than replace a pilot download. Keep the original unit zip and report
+with the submission, and compare results using the same checker version.
 
-GitHub automation is optional. For these development versions it uses the
-checks in the student's repository; it does not fetch an immutable official
-release. Use a lecturer's fresh-copy rerun when confirming a trial submission.
+GitHub automation is optional. The pilot download's workflow fetches the
+official checker for that version, verifies its pinned SHA-256, replaces the
+local checker and runs strict submission checks. The workflow can itself be
+edited, so a green result alone does not authenticate a submission; lecturers
+should still inspect and rerun the student's code.
+
+Older `0.1.0.dev0` downloads used the checker in the student's repository and
+could change without a new version label. If reviewing an older report, retain
+its original zip and establish which checker was used before comparing results.

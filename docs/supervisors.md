@@ -21,6 +21,10 @@ As a check on a project you have already set
 
 ## Try one unit first
 
+Use the [pilot checklist](pilot-checklist.md) to prepare, run and review a
+small trial. A printable PDF is available on that page; feedback can be sent
+by email without creating an account.
+
 1. Choose [A1](units/ode-ivp/index.md) or [A2](units/linear-systems/index.md)
    to match a topic you teach. Check the prerequisites on the unit page.
 2. Inspect an [example report](verification-report.md) and the unit's rubric

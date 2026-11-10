@@ -1,8 +1,8 @@
 # Curriculum
 
 The current units support undergraduate numerical methods teaching and
-preparation for computational projects. **A1 and A2 are available as trial
-prototypes**; all other entries below are possible future topics, not materials
+preparation for computational projects. **A1 and A2 are available as pilot
+prereleases**; all other entries below are possible future topics, not materials
 ready to assign. The longer-term aim is to support computational methods and
 mathematical models used in MSc and PhD work as well.
 
@@ -13,7 +13,7 @@ before A2. See [getting started](getting-started.md).
 | Level | Numerical methods and scientific computing | Mathematical models and inverse problems |
 |---|---|---|
 | **Foundations** | Errors, floating point and convergence order (inside A1 for now) | |
-| **Undergraduate** | **A1** ODE initial value problems (*prototype*) · **A2** iterative methods for linear systems (*prototype*) · A3 interpolation and quadrature · A4 finite differences | |
+| **Undergraduate** | **A1** ODE initial value problems (*pilot prerelease*) · **A2** iterative methods for linear systems (*pilot prerelease*) · A3 interpolation and quadrature · A4 finite differences | |
 | **MSc / PhD** | A5 linear multistep and block methods · A6 semi-analytical methods (Adomian decomposition, homotopy perturbation, variational iteration, differential transform) checked against numerical references · A7 integro-differential equations | C1 epidemic models · C2 vertical electrical sounding (VES) inversion · C3 aeromagnetic interpretation |
 
 Units in plain text are planned. The order may change in response to what

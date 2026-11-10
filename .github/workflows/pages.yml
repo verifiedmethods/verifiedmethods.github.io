@@ -19,12 +19,12 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: verifiedmethods/ode-ivp
-          ref: 3ee8c221b2f5d920c8e5879e0203fed5d97ab8d4
+          ref: 4bc6fe9a6101053fa7e96509f8adb99af126c098
           path: units-src/ode-ivp
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: verifiedmethods/linear-systems
-          ref: cfac902396041e238e12dd01bd03cec52036233a
+          ref: 0d3c37e3ce1f42f9b8864520112f4a5a4684c7fd
           path: units-src/linear-systems
       - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
       - name: Copy unit material and downloads
