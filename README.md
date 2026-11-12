@@ -8,6 +8,8 @@ The unit repositories must be sibling folders (for example `../ode-ivp`).
 
     uv run python tools/sync_units.py                       # copy unit material and the offline bundles
     uv run sphinx-build -W -b html docs docs/_build/html    # build
+    uv run python tools/check_site.py                     # offline acceptance checks
+    uv run python -m unittest discover -s tests -v          # deliberate-fault checks
     open docs/_build/html/index.html
 
 `tools/sync_units.py` copies each unit's `tutorial/`, `briefs/` and
@@ -30,6 +32,20 @@ When publishing unit changes, update both `ref` values in that workflow to the
 reviewed unit commits so the downloads, documentation, and example reports
 describe the same check suites. Local builds use the sibling working trees.
 In the repository settings, Pages must use "GitHub Actions" as its source.
+
+Deployment stops if the acceptance checks or their regression tests fail. The
+checker follows local links and anchors, checks referenced assets, verifies
+student ZIP checksums and recomputes checker fingerprints from ZIP contents.
+It also checks citation/report versions, complete reference summaries, embedded
+plots, and the A1 walkthrough's version, tables and plot copies. These checks
+detect inconsistent published material; they do not authenticate a release or
+replace the units' numerical tests. External links are not fetched by this check.
+
+For a build elsewhere, use `tools/check_site.py --build-dir PATH` and set
+`VM_SITE_BUILD_DIR=PATH` when running the regression tests. If an example report
+changes, review its walkthrough text and tables, and replace the two PNGs in
+`docs/_static/` with the corresponding decoded plots from that report. The
+acceptance check will reject stale copies. Keep the tagged pilot ZIPs unchanged.
 
 Pages are written in MyST Markdown, with Furo as the theme (chosen for small
 pages on slow connections).

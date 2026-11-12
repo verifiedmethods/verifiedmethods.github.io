@@ -61,6 +61,8 @@ Agree the scope with your lecturer. A full unit submission normally includes:
 You should be able to explain your code and conclusions in a viva. A report
 records stated checks; it does not establish authorship or prove a whole
 research project correct. Read [how the report works](verification-report.md).
+The [A1 walkthrough](a1-report-walkthrough.md) shows how to interpret the
+example's tables and plots before writing up your own evidence.
 
 ## Working offline and planning your time
 

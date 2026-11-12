@@ -8,6 +8,10 @@ and a lecturer's rerun; it is not a certificate of research validity.
 <a class="vm-button" href="examples/a1-example-report.html">Example report: unit A1</a>
 <a class="vm-button" href="examples/a2-example-report.html">Example report: unit A2</a>
 
+New to interpreting the evidence? Follow the
+[A1 report walkthrough](a1-report-walkthrough.md) to read the summary, error
+tables and plots, then explain what the results support.
+
 ## What is in it
 
 The first page
@@ -92,3 +96,9 @@ should still inspect and rerun the student's code.
 Older `0.1.0.dev0` downloads used the checker in the student's repository and
 could change without a new version label. If reviewing an older report, retain
 its original zip and establish which checker was used before comparing results.
+
+```{toctree}
+:hidden:
+
+a1-report-walkthrough
+```

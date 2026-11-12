@@ -28,7 +28,9 @@ by email without creating an account.
 1. Choose [A1](units/ode-ivp/index.md) or [A2](units/linear-systems/index.md)
    to match a topic you teach. Check the prerequisites on the unit page.
 2. Inspect an [example report](verification-report.md) and the unit's rubric
-   before asking students to install anything.
+   before asking students to install anything. The
+   [A1 walkthrough](a1-report-walkthrough.md) illustrates the explanation
+   students should develop beyond obtaining a passing report.
 3. Download and extract the unit; follow tutorial section 0 on a machine
    similar to the students' computers. Run `python verify.py`. The starter
    functions are deliberately unfinished, so the first report is incomplete.

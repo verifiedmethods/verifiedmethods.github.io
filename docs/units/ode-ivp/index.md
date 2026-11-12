@@ -59,6 +59,9 @@ help for common problems. Anaconda users can skip the setup and run
 
 ## What students learn
 
+Use the [A1 report walkthrough](../../a1-report-walkthrough.md) to connect
+the example's gate results, tables and plots with a written interpretation.
+
 After this unit a student can:
 
 - derive Euler's method from the Taylor series, and implement Euler, Heun and
