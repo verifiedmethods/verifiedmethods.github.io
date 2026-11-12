@@ -121,6 +121,10 @@ class BuiltSiteChecks(unittest.TestCase):
         (self.root / "_static/a1-example-cost.png").write_bytes(b"old plot")
         self.assert_problem("stale plot")
 
+    def test_stale_rendered_plot_is_rejected_even_when_full_size_copy_matches(self):
+        (self.root / "_images/a1-example-cost.png").write_bytes(b"stale rendered plot")
+        self.assert_problem("stale displayed plot")
+
     def test_stale_walkthrough_numbers_are_rejected(self):
         path = self.root / "a1-report-walkthrough.html"
         path.write_text(path.read_text().replace("0.977", "0.123"))

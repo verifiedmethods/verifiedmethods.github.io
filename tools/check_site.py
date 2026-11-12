@@ -233,9 +233,17 @@ def check_walkthrough(root, version, report, pages, result):
         if row[0] not in source or float(row[2]) != float(source[row[0]]):
             result.errors.append("A1 walkthrough: Euler error-table numbers differ from example report")
     images = report_images(report)
+    displayed = {PurePosixPath(urlsplit(image.get("src", "")).path).name: image.get("src", "")
+                 for image in guide.images}
     for filename, image in zip(("a1-example-convergence.png", "a1-example-cost.png"), images):
         if (root / "_static" / filename).read_bytes() != image:
             result.errors.append(f"A1 walkthrough: stale plot {filename}")
+        if filename not in displayed:
+            result.errors.append(f"A1 walkthrough: missing displayed plot {filename}")
+            continue
+        target = (root / unquote(urlsplit(displayed[filename]).path).lstrip("/")).resolve()
+        if not target.is_relative_to(root) or target.read_bytes() != image:
+            result.errors.append(f"A1 walkthrough: stale displayed plot {filename}")
 
 
 def validate_site(root):
